@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: cyprus-news-digest
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: SENDER_EMAIL
+        sync: false
+      - key: SENDER_PASSWORD
+        sync: false
+      - key: GOOGLE_APPLICATION_CREDENTIALS_JSON  # ADD THIS KEY
+        sync: false                         # Ensure it won't be saved in your repo
+      - key: PYTHON_VERSION
+        value: 3.11.4

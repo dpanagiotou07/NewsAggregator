@@ -1,0 +1,29 @@
+# Core Web App
+Flask==3.1.1
+gunicorn==23.0.0
+requests==2.32.4
+python-dotenv==1.1.1
+
+# Database
+psycopg[binary]==3.2.9
+pgvector==0.4.1
+
+# AI & Embeddings
+google-auth==2.40.3
+google-api-core==2.25.1
+sentence-transformers==5.0.0
+numpy==2.3.1
+
+# Web Scraping & Parsing
+beautifulsoup4==4.13.4
+lxml==5.4.0
+Crawl4AI==0.7.2
+trafilatura
+newspaper3k==0.2.8
+
+# Background Scheduler
+APScheduler==3.11.0
+
+# Utilities
+pytz==2025.2
+babel==2.17.0
